@@ -51,6 +51,7 @@ raw (CSV files: `data/`) → staging (`stg_survey_results`, `stg_user_metadata`)
   - Since the survey data does not expect updates or deletes, the data could be loaded incrementally, for example by week/day/hour depending on volume and requirements
   - The aggregations could also be computed incrementally (rolling aggregates)
   - I assume parallelism / chunked ingestion could be relevant but I have no experience with this, would like to hear about possible approaches
+  - The `user_metadata` table could be divided into more tables, for example country and department dimension tables
 
 ---
 
